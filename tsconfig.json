@@ -1,0 +1,31 @@
+{
+    "compilerOptions": {
+        // "lib": ["es5", "es6"],
+        // "target": "es6",
+        "outDir": "./build/server",
+        "target": "es2017",
+        "module": "commonjs",
+        "esModuleInterop": true,
+        "resolveJsonModule": true,
+        "moduleResolution": "node",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "removeComments": true,
+        "strictPropertyInitialization": false,
+        "sourceMap": true,
+        "skipLibCheck": true
+    },
+    "include": [
+        "server/**/*.ts",
+        "server/swagger/*.*"
+    ],
+    "exclude": [
+        "server/migration/*.ts",
+        "node_modules",
+        "./node_modules",
+        "./node_modules/*",
+        "node_modules/@types/*",
+        "./node_modules/@types/node/index.d.ts",
+        "node_modules/@types/react/index.d.ts",
+    ]
+}
